@@ -2,7 +2,7 @@
 const dgram = require('dgram');
 
 const server = dgram.createSocket('udp4');
-
+console.log("start");
 server.on('message', (msg, rinfo) => {
   console.log(`Received message from ${rinfo.address}:${rinfo.port}`);
   console.log(msg.toString());
@@ -11,4 +11,4 @@ server.on('message', (msg, rinfo) => {
   server.send(msg, 0, msg.length, rinfo.port, rinfo.address);
 });
 
-server.bind(8080,"localhost");
+server.bind(8080);

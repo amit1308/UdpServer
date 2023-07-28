@@ -4,9 +4,10 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "dgram": "^1.0.1"
+    "dgram": "^1.0.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
